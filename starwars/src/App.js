@@ -24,9 +24,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      {char && char.map((chr) => {
+      {char && char.map((chr, i) => {
         return(
-      <Characters char = {chr.name} />)})}
+      <Characters char = {chr} key = {i}/>)})}
     </div>
   );
 }
